@@ -1,0 +1,103 @@
+CodeCommit
+Description: A fully managed source control service that makes it easy for teams to host secure and scalable Git repositories.
+•	Features:
+o	Secure, private Git repositories
+o	Integration with AWS services and third-party tools
+o	High availability and durability
+o	Customizable access control policies
+o	Automatic scaling
+CodeBuild
+Description: A fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
+•	 Features:
+o	Fully managed build service
+o	Continuous scaling
+o	Pay-as-you-go pricing
+o	Integration with other AWS services and third-party tools
+o	Supports multiple programming languages and build environments
+CodeDeploy
+Description: A service that automates application deployments to a variety of compute services such as Amazon EC2, AWS Lambda, and on-premises servers.
+•Features:
+o	Automated deployments
+o	Blue/green deployments
+o	Rollback capabilities
+o	Integration with other AWS services
+o	Centralized control
+CodePipeline
+Description: A continuous delivery service for fast and reliable application and infrastructure updates.
+•	Features:
+o	Automates build, test, and deploy phases
+o	Customizable workflows
+o	Integration with third-party services
+o	Parallel execution
+o	Manual approvals
+CloudWatch Dashboards
+Description: Customizable home pages in the CloudWatch console that you can use to monitor your resources in a single view.
+•	Features:
+o	Customizable visualizations
+o	Real-time data
+o	Multi-region dashboards
+o	Integration with AWS services
+o	Easy to share
+ CloudWatch Alarms
+Description: A feature that watches a single metric over a specified time period and performs one or more specified actions based on the value of the metric relative to a threshold.
+•	Features:
+o	Threshold-based alarms
+o	Notification and automated actions
+o	Metric math
+o	Anomaly detection
+o	Composite alarms
+CloudWatch Logs Filters and Subscriptions
+Description: Filters allow you to extract meaningful information from logs, while subscriptions enable real-time log processing and analysis.
+•	 Features:
+o	Real-time log data streaming
+o	Integration with AWS Lambda, Kinesis, and Elasticsearch
+o	Customizable log patterns
+o	Monitoring and troubleshooting
+o	Security and compliance
+AWS Config
+Description: A service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+•	 Features:
+o	Resource configuration history
+o	Compliance and security analysis
+o	Change notifications
+o	Remediation actions
+o	Integration with other AWS services
+GuardDuty
+Description: A threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts, workloads, and data.
+•	 Features:
+o	Continuous threat detection
+o	Machine learning and threat intelligence
+o	Integration with AWS services
+o	Automated response actions
+o	Centralized management
+S3 Query Data
+Description: Amazon S3 Select and S3 Glacier Select allow you to run SQL queries directly on data stored in S3 without having to move the data to a database or analytics tool.
+•	 Features:
+o	Query data in place
+o	Cost-effective
+o	Integration with other AWS services
+o	Supports CSV, JSON, and Parquet formats
+o	Secure and scalable
+AWS Organizations (SCP and Compliance)
+Description: A service that helps you centrally manage and govern your environment as you grow and scale your AWS resources.
+•	 Features:
+o	Centralized management of multiple AWS accounts
+o	Service Control Policies (SCPs) for governance
+o	Consolidated billing
+o	Account creation automation
+o	Compliance management
+How to Use Pass Role
+Description: PassRole is an IAM feature that allows one service to pass a role to another service.
+•	Features:
+o	Grants permissions to pass roles
+o	Used in services like Lambda, ECS, and CodePipeline
+o	Ensures secure role delegation
+o	Fine-grained access control
+How to Track Root User Activities
+Description: Monitoring the root user’s activities is crucial for security and compliance.
+•	 Features:
+o	CloudTrail logging
+o	CloudWatch alarms for root user actions
+o	IAM policies restricting root user access
+o	Multi-factor authentication (MFA) for the root account
+o	AWS Config for compliance tracking

@@ -1,0 +1,26 @@
+1.	What is an EBS volume?
+ An EBS (Elastic Block Store) volume is a block-level storage device that you can attach to an EC2 instance. It provides persistent storage that persists independently from the life of an instance.
+2.	What is the difference between EBS-backed and instance-store backed instances? 
+EBS-backed instances store the root file system on an EBS volume, providing persistent storage. Instance-store backed instances use the instance's root disk that is physically attached to the host computer.
+3.How can you increase the size of an EBS volume? 
+You can increase the size of an EBS volume, but it requires creating a snapshot of the existing volume, then creating a larger volume from that snapshot, and finally attaching it to the instance.
+4.Can you attach multiple EBS volumes to a single EC2 instance?
+ Yes, you can attach multiple EBS volumes to a single EC2 instance, each identified by a unique device name.
+5.Explain the difference between General Purpose SSD (gp2) and Provisioned IOPS SSD (io1). 
+ General Purpose SSD (gp2) provides balanced performance for a wide range of workloads. Provisioned IOPS SSD (io1) allows you to specify a consistent IOPS rate, making it ideal for I/O-intensive applications.
+DLM (Data Lifecycle Manager):
+6.	What is AWS Data Lifecycle Manager (DLM)? 
+AWS Data Lifecycle Manager is a service that automates the creation, retention, and deletion of EBS snapshots. It helps in managing the lifecycle of your EBS volumes' backups.
+7.How do you create a lifecycle policy for EBS snapshots? 
+You create a lifecycle policy in the AWS DLM console or by using the DLM API. The policy defines the rules for creating and retaining snapshots, such as the frequency and retention period.
+8.	Explain the concept of retention policies in DLM.
+Retention policies in DLM specify how many snapshots to retain and for how long. You can set up policies to keep a certain number of snapshots, or to retain snapshots for a specific number of days.
+Snapshots:
+9.What is an EBS snapshot? 
+An EBS snapshot is a point-in-time copy of an EBS volume. It captures the data and configuration of the volume, allowing you to restore it or create new volumes from the snapshot.
+10.How do you create a snapshot of an EBS volume?
+ You can create a snapshot using the AWS Management Console, AWS CLI, or SDKs. You select the EBS volume, initiate the snapshot process, and it will be created asynchronously.
+11.Can you create a snapshot of a root volume that is attached to a running EC2 instance?
+Yes, you can create a snapshot of a root volume while it is attached to a running instance. However, it's recommended to stop the instance to ensure data consistency.
+12.What is the difference between a snapshot and an AMI? 
+A snapshot is a point-in-time copy of an EBS volume, while an AMI (Amazon Machine Image) is a pre-configured image that can be used to launch EC2 instances. An AMI can include multiple snapshots.

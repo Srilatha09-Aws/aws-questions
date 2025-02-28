@@ -1,0 +1,10 @@
+1.	What is a security group in EC2? 
+A security group acts as a virtual firewall for an instance. It controls inbound and outbound traffic, allowing or denying communication based on rules defined for the group.
+2.	How is a security group different from a Network Access Control List (NACL)?
+A security group operates at the instance level, while a Network Access Control List (NACL) operates at the subnet level. Security groups are stateful, while NACLs are stateless.
+3.	Can you associate multiple security groups with a single EC2 instance?
+ Yes, you can associate multiple security groups with a single EC2 instance. The rules of all associated security groups are aggregated.
+4.	What are inbound and outbound rules in a security group?
+ Inbound rules control the incoming traffic to an instance, while outbound rules control the outgoing traffic. Each rule defines a combination of protocol, port, and source/destination for the traffic.
+5.	How does security group evaluation work?
+ Security group rules are evaluated based on the most specific rule that matches the traffic. If no rule explicitly allows the traffic, it is denied by default. The rule with the highest priority takes precedence.

@@ -1,0 +1,20 @@
+1.	What is an EC2 instance? 
+ An EC2 instance is a virtual server in the Amazon Elastic Compute Cloud (EC2) service. It provides scalable computing capacity in the AWS cloud, allowing users to run applications and services.
+2.	Can you explain the difference between an instance and an AMI?
+An instance is a running virtual server in EC2, while an AMI (Amazon Machine Image) is a pre-configured virtual machine template that serves as a blueprint for launching instances. You use an AMI to create, launch, and clone instances.
+3.	How do you launch an EC2 instance? 
+You can launch an EC2 instance through the AWS Management Console, AWS CLI (Command Line Interface), or SDKs using the "RunInstances" command.
+4.	What is the significance of an instance type?
+An instance type defines the hardware of the host computer used for your instance. Each instance type offers different combinations of CPU, memory, storage, and networking capacity. It determines the performance and pricing of your instance.
+5.	What is the purpose of user data in EC2 instances?
+ User data allows you to run scripts or provide configuration information when launching an instance. This is useful for tasks like installing software, setting up configurations, or running custom startup scripts.
+6.	How can you stop and start an EC2 instance?
+ You can stop an EC2 instance through the AWS Management Console, AWS CLI, or SDKs. To start a stopped instance, use the same methods.
+7.	What is the difference between stopping and terminating an EC2 instance? 
+When you stop an instance, it is turned off but remains in the AWS infrastructure. You can start it again later. Terminating an instance permanently deletes it and its associated resources.
+8.	How do you resize an EC2 instance? 
+You can resize an EC2 instance by stopping it, changing its instance type in the AWS Management Console, and then starting it again.
+9.	Can you attach an IAM role to an existing EC2 instance?
+Yes, you can associate an IAM role with an existing EC2 instance. You do this by stopping the instance, modifying the instance settings, and attaching the desired IAM role.
+10.	Explain the concept of an Elastic IP address in EC2. 
+An Elastic IP address is a static, public IPv4 address that you can allocate to your AWS account. It's designed for dynamic cloud computing to ensure that the IP address of your EC2 instance doesn't change if the instance is stopped or terminated.
